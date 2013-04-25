@@ -1,11 +1,23 @@
 #Lucene Practicals
 
 
+## 0. Download & Install
+
+* Get code
+** download and expand https://github.com/renaud/ir_tutorial_lucene/archive/master.zip
+** or clone: `git clone https://github.com/renaud/ir_tutorial_lucene.git` (faster!)
+* Launch Eclipse
+* Menu `File` > `Import`, then `General`, `Existing Project into Workspace`
+* `Select root directory` --> `Browse` to the folder `Lucene-Example` that you downloaded above
+* Click on `Finish`
+
 ## 1. Getting started with Lucene
 
 ### 1.1. Index documents
 
-`ch.epfl.coling.lucene.Indexer` demonstate how to index text.
+`ch.epfl.coling.lucene.Indexer` demonstates how to index text. Run this class (right-click, then `Run as...` `Java Application`). See the output in the console.
+
+See the comments in the code for further information.
 
 Further reading:
 
@@ -14,7 +26,7 @@ Further reading:
 
 ### 1.2. Search documents
 
-`ch.epfl.coling.lucene.Searcher` demonstate how to perform index search. You can test the *query parser* with the following queries:
+`ch.epfl.coling.lucene.Searcher` demonstates how to perform index search. You can launch it and test the *query parser* with the following queries:
 
 * `jumps`
 * `jum`
@@ -44,7 +56,7 @@ Further reading:
 
 ![Luke](doc1.PNG)
 
-* Look at how a document is stored: 
+* Look at how a document is represented in the index: 
  1. Click tab `Documents`
  1. Browse to document # 1 (with blue arrow)
  1. Click on `Reconstruct & Edit`
@@ -72,7 +84,7 @@ The `data` folder contains a corpus of 25k sentences from biomedical articles ([
  * `GABA receptor`, 
  * `"GABA receptor"` 
 
-## Using another Analyzer: adding your own stopwords
+## 3. Using another Analyzer: adding your own stopwords
 
 1. Uncomment code in `ch.epfl.coling.lucene.Indexer.getAnalyzer()` and modify the `stopwords` variable. 
 1. Delete your index, and re-run the indexing.
