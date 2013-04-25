@@ -4,12 +4,12 @@
 ## 0. Download & Install
 
 * Get code
-** download and expand https://github.com/renaud/ir_tutorial_lucene/archive/master.zip
-** or clone: `git clone https://github.com/renaud/ir_tutorial_lucene.git` (faster!)
+ * download and expand https://github.com/renaud/ir_tutorial_lucene/archive/master.zip
+ * or `git clone https://github.com/renaud/ir_tutorial_lucene.git` (faster!)
 * Launch Eclipse
 * Menu `File` > `Import`, then `General`, `Existing Project into Workspace`
 * `Select root directory` --> `Browse` to the folder `Lucene-Example` that you downloaded above
-* Click on `Finish`
+* Click on `Finish`,  now you should have a project called hello_lucene
 
 ## 1. Getting started with Lucene
 
